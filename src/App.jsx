@@ -11,8 +11,7 @@ const App = () => {
   let [id, setId] = useState(() => {
     const storedId = parseInt(localStorage.getItem('id')) || 0;
   return storedId;
-  })
-
+  });
 
   useEffect(() => {
     const data = JSON.parse(localStorage.getItem('meusDados')) || [];
@@ -20,7 +19,6 @@ const App = () => {
   }, []);
 
   const handleSubmit = (form) => {
-    console.log(form)
     const newId = id + 1;
     const newData = [...localStorageData, {...form, id: newId}]
     setLocalStorageData(newData);
@@ -32,8 +30,7 @@ const App = () => {
     <Routes>
       <Route path="/Cadastro" element={ <Cadastro onSubmit={handleSubmit}/> } />
       <Route exact path="/" element={ <Navigate to="/Cadastro" /> } />
-      <Route path="/MeusDados" element={ <MeusDados data={localStorageData}/> } />
-      
+      <Route path="/MeusDados" element={ <MeusDados data={localStorageData}/> } />      
     </Routes>
   );
 }

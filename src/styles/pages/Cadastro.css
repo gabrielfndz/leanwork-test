@@ -59,4 +59,22 @@ input::placeholder {
     padding: 0 10px;
 }
 
+.btn-footer {
+    text-decoration: none;
+    padding: 5px 15px;
+    color: #a3a3a3;
+    cursor: pointer;
+    border-radius: 16px;
+    transition: 0.2s;
+
+}
+
+.btn-footer:hover {
+    transition: 0.2s;
+    color: #1e1e1e;
+}
+
+.place-self-center {
+    place-self: center;
+}
 

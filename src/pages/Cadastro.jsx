@@ -7,23 +7,25 @@ import { useNavigate } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import InputMask from 'react-input-mask'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
+
 const Cadastro = ({ onSubmit }) => {
+    const navigate = useNavigate();
     const [form, setForm] = useState({
         nome: '',
         email: '',
         cpf: '',
         telefone: ''
     });
-    const navigate = useNavigate();
-    const [validForm, setValidForm] = useState(false)
+    const [validForm, setValidForm] = useState(false);
     const [validEmail, setValidEmail] = useState(false);
 
     const handleChange = async (e) => {
         const { name, value } = e.target;
-
         setForm({ ...form, [name]: value });
     }
-
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -41,17 +43,15 @@ const Cadastro = ({ onSubmit }) => {
         if (emailRegex.test(email)) {
             setValidEmail(true)
         } else {
-
             setValidEmail(false)
         }
-    };
+    }
 
     useEffect(() => {
         isValidEmail(form.email)
         const isValid = Object.values(form).every((value) => value.trim() !== '') && validEmail === true;
         setValidForm(isValid);
-    }, [form])
-
+    }, [form, validEmail]);
 
 
     return (
@@ -81,10 +81,15 @@ const Cadastro = ({ onSubmit }) => {
                                 <InputMask mask='(99) 99999-9999' type='text' name='telefone' onChange={handleChange} value={form.telefone} placeholder='Telefone'></InputMask>
                             </div>
                             <div className='row'>
-                                <div className='col-12 mt-5 text-center'>
+                                <div className='col-6 mt-5 text-center'>
                                     <button className='btn-cadastro' type='submit' disabled={!validForm}>
                                         Cadastrar
                                     </button>
+                                </div>
+                                <div className='col-6 mt-5 text-center place-self-center'>
+                                    <a href='/meusDados' className='btn-footer'>
+                                        Meus Dados <FontAwesomeIcon icon={faArrowRight} />
+                                    </a>
                                 </div>
                             </div>
                         </form>

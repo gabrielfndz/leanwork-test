@@ -1,7 +1,7 @@
 body {
   overflow-y: hidden;
-
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,10 +14,9 @@ body {
   min-width: max-content;
 }
 
-
 .btn-cadastro {
   background-color: #40c8f4;
-  padding: 8px 20px;
+  padding: 8px 30px;
   text-decoration: none;
   border: none;
   color: #fff;
@@ -35,4 +34,3 @@ body {
   background-color: #f6f6f6;
   color: #dddcdc;
 }
-

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 import { Container, Row, Col, Table } from 'react-bootstrap'
 
@@ -41,7 +41,7 @@ const MeusDados = ({ data }) => {
                                         <th>Email</th>
                                         <th>CPF</th>
                                         <th>Telefone</th>
-                                        <th>Ações</th>
+                                        <th width='5%'>Ações</th>
                                     </tr>
                                 </thead>
                                 <tbody>

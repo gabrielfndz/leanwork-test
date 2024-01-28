@@ -12,7 +12,7 @@
     border: none;
     padding: 15px;
     border-radius: 20px;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.063);
     background-color: #fff;
     width: 100%;
     max-width: 700px;
@@ -26,3 +26,10 @@ th {
 td {
     font-size: 14px;
 }
+
+Table {
+    overflow-x: auto;
+}
+
+
+
