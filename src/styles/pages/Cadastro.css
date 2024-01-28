@@ -1,0 +1,61 @@
+.background-img {
+    position: relative;
+    background-image: url('../images/bg.jpg');    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100dvh;
+}
+
+
+.header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+label {
+    color: #999999;
+}
+
+input {
+    color: #efeeed;
+    border: none;
+    border-bottom: 1px solid #dbdbdb;
+    transition: opacity 0.3s ease;
+    padding: 10px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+input:focus {
+    color: #555555;
+    background: none;
+    opacity: 0.7;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #adadad;
+}
+
+input::placeholder {
+    font-size: 14px;
+}
+
+.form-card {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px;
+    position:relative; 
+}
+
+.valid-span {
+    color: rgb(10, 216, 10);
+    font-size: 14px;
+    padding: 0 10px;
+}
+.invalid-span {
+    color: red;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+
