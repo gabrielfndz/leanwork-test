@@ -14,7 +14,8 @@ Clone o repositório através da seguinte chave https: <code>https://github.com/
 
 Será preciso ter os pacotes <code>npm</code>, <code>npx</code>, e <code>node</code> instalados em sua maquina.
 
-No diretório raiz do projeto, execute o comando npm install para que sejam instaladas as dependências.
+No diretório raiz do projeto, execute o comando <code>npm install</code> para que sejam instaladas as dependências.
 
 Utilize o comando <code>npm start</code> para iniciar a aplicação em seu navegador.
+<br>
 Para rodar os testes, utilize o comando <code>npx cypress run</code> para rodar os testes no terminal, ou se preferir, utilize o comando <code>npx cypress open</code> para rodar na interface do cypress.
