@@ -1,4 +1,4 @@
-const baseUrl = 'localhost:3000'
+const baseUrl = 'localhost:3000' || 'localhost:3001'
 
 describe('Página de Cadastro', () => {
     it('Envio com e-mail inválido', () => {

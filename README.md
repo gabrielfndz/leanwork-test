@@ -19,4 +19,4 @@ No diretório raiz do projeto, execute o comando <code>npm install</code> para q
 Utilize o comando <code>npm start</code> para iniciar a aplicação em seu navegador.
 <br>
 
-Utilize o comando <code>npx cypress run</code> para rodar os testes no terminal, ou se preferir, utilize o comando <code>npx cypress open</code> para rodar na interface do cypress.
+Utilize o comando <code>npm run cypress:run</code> para rodar os testes no terminal, ou se preferir, utilize o comando <code>npm run cypress:open</code> para rodar na interface do cypress.
